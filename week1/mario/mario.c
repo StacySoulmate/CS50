@@ -1,12 +1,32 @@
-//  more comfortable
-
 #include <stdio.h>
 #include <cs50.h>
 
+void CreatePyramid(numOfRows){
+
+int i, j, k, l;
+
+for (i = 0; i < numOfRows; i++){
+
+    for(k = numOfRows; k > i; k--){
+        printf(" ");
+    }
+    for(j = -1; j <= i; j++){
+        printf("#");
+    }
+    printf("  ");
+
+   for (l = -1; l <= i; l++){
+        printf("#");
+    }
+    printf("\n");
+}
+ printf("\n");
+}
+
 int main (void){
     int n;
-
-    do{
+// promt the user for input
+do{
     n = get_int("Enter a number: ");
     if (n > 20){
         printf("too high\n");
@@ -16,22 +36,5 @@ int main (void){
     }
     } while (n == 0 || n > 20);
 
-int i, j, k, t;
-
-for (i = 0; i < n; i++){
-
-    for(k = n; k > i; k--){
-        printf(" ");
-    }
-    for(j = 0; j <= i; j++){
-        printf("#");
-    }
-    printf("  ");
-
-   for (t = 0; t <= i; t++){
-        printf("#");
-    }
-    printf("\n");
-}
- printf("\n");
+    CreatePyramid(n);
 }
