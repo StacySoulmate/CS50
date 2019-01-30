@@ -16,7 +16,7 @@ int main (int argc, string argv[]){
         printf("You must have entered one number\n");
         exit(0);}
     else{
-        key = atoi(argv[1]);
+        key = atoi(argv[1]); // argv[1] - casting from string > integer
         if(key < 0)
         printf("You must have entered a positive number");
     }
@@ -28,28 +28,29 @@ int main (int argc, string argv[]){
 
 string Encryption(int Key, string Ptext){
 
-    string Ctext = Ptext;
-    char Alph_value;
+    string Ctext = Ptext; // specifying the size (ciphertext should be equal o plaintext)
+    char Alph_value_cipher;
 
-    for (int i = 0; i < strlen(Ptext); i++){
-		
-		char current_letter = Ptext[i];
+    for (int i = 0; i < strlen(Ptext); i++) // iterating through the letters in plaintext
+	{
 
-        if(isalpha(current_letter)){
+		char current_letter = Ptext[i]; // taking a certain letter
+
+        if(isalpha(current_letter)){ // checking is alphabetical
 
             if(isupper(current_letter)){
-				Alph_value = (current_letter + Key - 'A') % 26;
-				Ctext[i] = Alph_value + 'A';
+				Alph_value_cipher = (current_letter + Key - 'A') % 26; // formula to obtain the alphabetical value of the ciphertext
+				Ctext[i] = Alph_value_cipher + 'A'; // back to ASCii value
             }
 
-            else {
-				Alph_value = (current_letter + Key - 'a') % 26;
-				Ctext[i] =  Alph_value + 'a';
+            else { // same for lowercase letters
+				Alph_value_cipher = (current_letter + Key - 'a') % 26;
+				Ctext[i] =  Alph_value_cipher + 'a';
             }
         }
 
         else
-            Ctext[i] = current_letter;
+            Ctext[i] = current_letter; // for non-alphabetical values
        }
        return Ctext;
     }
