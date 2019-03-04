@@ -1,3 +1,5 @@
+//Credit Card Validator
+
 #include <stdio.h>
 #include <cs50.h>
 
