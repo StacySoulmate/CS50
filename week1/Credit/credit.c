@@ -1,3 +1,10 @@
+/* uses cs50.h library, therefore works in thir IDE: https://legacy.cs50.io/dashboard.html 
+
+This program checks if the credit card number entered is valid
+
+*/
+
+
 #include <stdio.h>
 #include <cs50.h>
 
@@ -6,7 +13,7 @@ long long cc_number;
 long long c, count;
 int remainder;
 
-// prompting a user for a valid input
+// prompting a user for an input
 do{
    count = 0;
    cc_number = get_long_long("Enter your credit card number: ");
