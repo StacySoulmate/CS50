@@ -1,3 +1,5 @@
+//uses cs50.h library, therefore works in their IDE: https://legacy.cs50.io/dashboard.html
+
 #include <stdio.h>
 #include <cs50.h>
 
