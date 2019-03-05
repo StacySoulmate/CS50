@@ -1,3 +1,10 @@
+/* 
+uses cs50.h library, therefore works in their IDE: https://legacy.cs50.io/dashboard.html
+
+Read more about the task here: https://docs.cs50.net/2018/x/psets/1/cash/cash.html
+*/
+
+
 #include <stdio.h>
 #include <cs50.h>
 #include <math.h>
