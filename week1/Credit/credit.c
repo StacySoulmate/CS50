@@ -1,4 +1,4 @@
-/* uses cs50.h library, therefore works in thir IDE: https://legacy.cs50.io/dashboard.html 
+/* uses cs50.h library, therefore works in their IDE: https://legacy.cs50.io/dashboard.html 
 
 This program checks if the credit card number entered is valid
 
