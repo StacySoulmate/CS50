@@ -1,4 +1,9 @@
-//uses cs50.h library, therefore works in their IDE: https://legacy.cs50.io/dashboard.html
+/* uses cs50.h library, therefore works in their IDE: https://legacy.cs50.io/dashboard.html
+
+This program encrypts the entered text using the key which is also entered
+Read more about the task here: https://docs.cs50.net/2018/x/psets/2/caesar/caesar.html
+
+*/
 
 #include <stdio.h>
 #include <cs50.h>
